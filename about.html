@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="images/OptimaFavicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>About Optima</title>
+  </head>
+  <body class="w-screen overflow-x-hidden font-pop">
+    <header
+      class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-r from-slate-300 to-gray-100 bg-opacity-50 text-sm py-4"
+    >
+      <nav
+        class="max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        aria-label="Global"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="./index.html"
+            class="op-logo font-sans font-bold text-f-six md:text-f-seven lg:text-f-eight h-full items-center flex my-auto tracking-tight justify-center text-primary"
+            >Optima</a
+          >
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+              data-hs-collapse="#navbar-with-mega-menu"
+              aria-controls="navbar-with-mega-menu"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="hs-collapse-open:hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="navbar-with-mega-menu"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        >
+          <div id="email-n-social-nav" class="hidden sm:flex">
+            <div
+              id="nav-contact-links"
+              class="flex flex-row align-middle font-medium text-gr-700 justify-end pb-s-two w-full"
+            >
+              <a
+                href="mailto:test@test.com"
+                class="hover:text-ter-100 transition"
+                >optimaprojectcontrol@example.com</a
+              >
+              <div
+                id="nav-social-links"
+                class="flex flex-row pl-s-five gap-x-s-two"
+              >
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="facebook"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-ter-100 transition" alt="twitter">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="linkedin"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="instagram"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
+          >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >About Us</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >Services</a
+            >
+
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none]"
+            >
+              <button
+                id="hs-mega-menu-basic-dr"
+                type="button"
+                class="flex items-center w-full text-gr-700 hover:text-ter-100 transition font-medium"
+              >
+                Courses
+                <svg
+                  class="ml-2 w-2.5 h-2.5 text-gr-700"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-transparent sm:bg-gr-200 sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5 hidden"
+              >
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Management
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Planning
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Construction Planning
+                </a>
+              </div>
+            </div>
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-gradient-to-r from-fuchsia-500 to-cyan-500">
+      <div class="max-w-7xl flex flex-col relative mx-auto">
+        <section
+          id="about-banner"
+          class="flex flex-col my-s-four lg:grid lg:grid-cols-2"
+        >
+          <div>
+            <div
+              class="max-w-2xl text-center mx-auto h-full flex flex-col justify-center"
+            >
+              <p
+                class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-tl from-violet-200 to-rose-300 text-transparent"
+              >
+                <strong>Optima</strong>: Your Solution to Construction Planning
+              </p>
+
+              <!-- Title -->
+              <div class="mt-5 max-w-2xl">
+                <h1
+                  class="block font-semibold text-gray-100 drop-shadow-lg text-4xl md:text-5xl lg:text-6xl"
+                >
+                  The Intuitive Planning Solutions
+                </h1>
+              </div>
+              <!-- End Title -->
+
+              <div class="mt-5 max-w-3xl">
+                <p class="text-lg text-gr-200 drop-shadow-lg">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ipsam expedita beatae inventore sapiente minus reiciendis enim
+                  debitis
+                </p>
+              </div>
+
+              <!-- Buttons -->
+              <div
+                class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center"
+              >
+                <a
+                  class="inline-flex justify-center items-center gap-x-3 text-center bg-prim-200 hover:bg-prim-300 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none group transition py-3 px-4"
+                  href="#"
+                >
+                  <div
+                    class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+                  >
+                    Hover over me
+                  </div>
+                </a>
+                <a
+                  class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold hover:bg-ter-600 text-white focus:outline-none group focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm"
+                  href="#"
+                >
+                  <div
+                    class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+                  >
+                    Hover over me
+                  </div>
+                </a>
+              </div>
+              <!-- End Buttons -->
+            </div>
+          </div>
+          <div>
+            <img
+              src="images/ben2.jpg"
+              alt=""
+              class="max-h-[300px] overflow-hidden rounded-md w-[90%] object-cover mx-auto my-s-four lg:aspect-square lg:w-4/5 lg:my-s-five lg:px-0 lg:max-h-full"
+            />
+          </div>
+        </section>
+        <!-- Cards -->
+        <section
+          class="flex flex-col md:flex-row justify-center relative h-full gap-x-s-two md:pt-s-three"
+        >
+          <div class="about-head-card">
+            <div class="about-head-card-header">
+              <div class="about-head-card-img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                >
+                  <g fill="none" stroke="currentColor" stroke-width="4">
+                    <path
+                      stroke-linejoin="round"
+                      d="M5 19h38v22a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19Zm0-9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v9H5v-9Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m16 31l6 6l12-12"
+                    />
+                    <path stroke-linecap="round" d="M16 5v8m16-8v8" />
+                  </g>
+                </svg>
+              </div>
+              <div class="about-head-card-title">
+                <h2>Effective Project Planning</h2>
+              </div>
+            </div>
+            <div class="about-head-card-inner">
+              <p>
+                Effective planning is the cornerstone of a successful project,
+                ensuring timely completion and stakeholder satisfaction.
+              </p>
+            </div>
+          </div>
+          <div class="about-head-card">
+            <div class="about-head-card-header">
+              <div class="about-head-card-img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.005 22.003c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3-9v2h-1v2h8v-2h-5v-2h3v-2h-3v-1a1.5 1.5 0 0 1 2.76-.815l1.986-.497a3.501 3.501 0 0 0-6.746 1.312v1h-1v2h1Z"
+                  />
+                </svg>
+              </div>
+              <div class="about-head-card-title">
+                <h2>Cost Savings</h2>
+              </div>
+            </div>
+            <div class="about-head-card-inner">
+              <p>
+                A skilled project control specialist can help you stay on
+                schedule and save costs by identifying and mitigating potential
+                risks.
+              </p>
+            </div>
+          </div>
+          <div class="about-head-card">
+            <div class="about-head-card-header">
+              <div class="about-head-card-img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M9 3V1h6v2H9Zm1 11.75l-1.1-2.2q-.125-.275-.375-.413T8 12H3.05q.375-3.375 2.925-5.688T12 4q1.55 0 2.975.5t2.675 1.45l1.4-1.4l1.4 1.4l-1.4 1.4q.8 1.05 1.275 2.213T20.95 12h-4.325L14.9 8.55q-.275-.575-.9-.575t-.9.575l-3.1 6.2ZM12 22q-3.475 0-6.025-2.313T3.05 14h4.325L9.1 17.45q.275.575.9.575t.9-.575l3.1-6.2l1.1 2.2q.125.275.375.413T16 14h4.95q-.375 3.375-2.925 5.687T12 22Z"
+                  />
+                </svg>
+              </div>
+              <div class="about-head-card-title">
+                <h2>Efficient Resource Management</h2>
+              </div>
+            </div>
+            <div class="about-head-card-inner">
+              <p>
+                A well-managed project utilizes resources effectively,
+                maximizing productivity and minimizing delays.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- About Us Heading -->
+      <div
+        class="py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-yellow-200 to-teal-400"
+      >
+        <div class="mx-auto max-w-5xl px-4 md:px-8">
+          <div
+            class="rounded-lg bg-gradient-to-r from-teal-400 to-yellow-200 px-4 py-6 md:py-8 lg:py-12"
+          >
+            <h2
+              class="mb-4 text-center text-2xl font-semibold text-gr-800 md:mb-6 md:text-3xl lg:text-4xl"
+            >
+              Discover Our Story
+            </h2>
+
+            <p class="mx-auto max-w-prose text-center text-gr-800 md:text-xl">
+              At Optima, we provide expert project control services to help you
+              achieve your goals efficiently, on time, and within budget. Our
+              experienced team specializes in planning, scheduling, cost
+              control, risk management, and performance analysis, with a
+              commitment to excellence and personalized approach to every
+              project. Let us take your project to the next level.
+            </p>
+            <p
+              class="my-s-four text-center font-semibold text-indigo-500 md:my-s-five lg:text-lg"
+            >
+              Our Approach
+            </p>
+            <p class="mx-auto max-w-prose text-center text-gr-800 md:text-xl">
+              At Optima, we believe that the key to success lies in a
+              personalized approach. We take the time to understand our clients'
+              unique needs, goals, and challenges, and tailor our project
+              control services accordingly. Our team of experts works closely
+              with you every step of the way, from initial planning to final
+              analysis, to ensure that your project runs smoothly and
+              efficiently. With a focus on excellence, attention to detail, and
+              a can-do attitude, we are dedicated to helping you achieve your
+              goals and exceed your expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Services offered -->
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-7xl px-4 md:px-8">
+          <!-- text - start -->
+          <div class="mb-10 md:mb-16">
+            <h2
+              class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+            >
+              Our competitive advantage
+            </h2>
+
+            <p
+              class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"
+            >
+              This is a section of some simple filler text, also known as
+              placeholder text. It shares some characteristics of a real written
+              text but is random or otherwise generated.
+            </p>
+          </div>
+          <!-- text - end -->
+
+          <div class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Forensic Planning
+                </h3>
+                <p class="text-gray-500">
+                  Forensic planning ensures project success. Experts use tools
+                  for issue identification, schedule and budget monitoring, and
+                  data-driven decision-making, preventing delays and overruns.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Delay Analysis
+                </h3>
+                <p class="text-gray-500">
+                  Construction projects rely on delay analysis. Experts use
+                  forensic schedule analysis and modeling to identify and
+                  mitigate delays, ensuring projects stay on track, avoid
+                  disputes.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Tender Planning
+                </h3>
+                <p class="text-gray-500">
+                  Effective tender planning is crucial for winning bids. Experts
+                  analyze bid documents, identify risks, and create competitive
+                  packages, meeting budget and scheduling requirements for
+                  project success.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">Reporting</h3>
+                <p class="text-gray-500">
+                  Experts deliver insightful reports, utilizing data
+                  visualization and metrics for optimized project outcomes.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">Dashboard</h3>
+                <p class="text-gray-500">
+                  Experts develop custom dashboards, enabling real-time project
+                  visibility and informed decision-making for maximum success.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex divide-x rounded-lg border bg-gray-50">
+              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-4 md:p-6">
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Value Engineering
+                </h3>
+                <p class="text-gray-500">
+                  Identify cost-saving opportunities, enhance efficiency, and
+                  improve performance while meeting objectives and maintaining
+                  quality standards.
+                </p>
+              </div>
+            </div>
+            <!-- feature - end -->
+          </div>
+        </div>
+      </div>
+      <!-- Testimonials -->
+      <div class="bg-white py-s-four sm:py-s-six lg:py-s-eight">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <h2
+            class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl"
+          >
+            What others say about us
+          </h2>
+
+          <div
+            class="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x"
+          >
+            <!-- quote - start -->
+            <div
+              class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8"
+            >
+              <div class="text-center text-gray-600">
+                “This is a section of some simple filler text, also known as
+                placeholder text.”
+              </div>
+
+              <div
+                class="flex flex-col items-center gap-2 sm:flex-row md:gap-3"
+              >
+                <div
+                  class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+                    loading="lazy"
+                    alt="Photo by Radu Florin"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+
+                <div>
+                  <div
+                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                  >
+                    John McCulling
+                  </div>
+                  <p
+                    class="text-center text-sm text-gray-500 sm:text-left md:text-sm"
+                  >
+                    CEO / Datadrift
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- quote - end -->
+
+            <!-- quote - start -->
+            <div
+              class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8"
+            >
+              <div class="text-center text-gray-600">
+                “This is a section of some simple filler text, also known as
+                placeholder text.”
+              </div>
+
+              <div
+                class="flex flex-col items-center gap-2 sm:flex-row md:gap-3"
+              >
+                <div
+                  class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
+                    loading="lazy"
+                    alt="Photo by christian ferrer"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+
+                <div>
+                  <div
+                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                  >
+                    Kate Berg
+                  </div>
+                  <p
+                    class="text-center text-sm text-gray-500 sm:text-left md:text-sm"
+                  >
+                    CFO / Dashdash
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- quote - end -->
+
+            <!-- quote - start -->
+            <div
+              class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8"
+            >
+              <div class="text-center text-gray-600">
+                “This is a section of some simple filler text, also known as
+                placeholder text.”
+              </div>
+
+              <div
+                class="flex flex-col items-center gap-2 sm:flex-row md:gap-3"
+              >
+                <div
+                  class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
+                    loading="lazy"
+                    alt="Photo by Ayo Ogunseinde"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+
+                <div>
+                  <div
+                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                  >
+                    Greg Jackson
+                  </div>
+                  <p
+                    class="text-center text-sm text-gray-500 sm:text-left md:text-sm"
+                  >
+                    CTO / Uptime
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- quote - end -->
+          </div>
+        </div>
+      </div>
+      <!-- FAQs -->
+      <div
+        class="max-w-7xl bg-gr-50 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+      >
+        <!-- Grid -->
+        <div class="grid md:grid-cols-5 gap-10">
+          <div class="md:col-span-2">
+            <div class="max-w-xs">
+              <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">
+                Frequently<br />asked questions
+              </h2>
+              <p class="mt-1 hidden md:block text-gray-600">
+                Answers to the most frequently asked questions.
+              </p>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="md:col-span-3">
+            <!-- Accordion -->
+            <div class="hs-accordion-group divide-y divide-gray-200">
+              <div
+                class="hs-accordion pb-3 active"
+                id="hs-basic-with-title-and-arrow-stretched-heading-one"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                >
+                  What is project planning, and why is it important?
+                  <svg
+                    class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                  class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+                >
+                  <p class="text-gray-600">
+                    Project planning is the process of defining project goals,
+                    identifying tasks, estimating resources, and establishing
+                    timelines. It's important because it creates a clear and
+                    structured approach to project execution, minimizes risks,
+                    ensures efficient resource use, and establishes realistic
+                    expectations for stakeholders. Effective project planning is
+                    crucial for successful project completion.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-two"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                >
+                  What tools do you use for project control?
+                  <svg
+                    class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+                >
+                  <p class="text-gray-600">
+                    Project control specialists use a range of tools to manage
+                    and control project activities, including project management
+                    software, Earned Value Management (EVM) tools, risk
+                    management software, cost estimating software, Gantt charts,
+                    change management tools, and communication tools. The
+                    specific tools used depend on the project and stakeholder
+                    needs.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-three"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                >
+                  How do you track project progress?
+                  <svg
+                    class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
+                >
+                  <p class="text-gray-600">
+                    A project control specialist tracks project progress by
+                    monitoring actual project performance against the project
+                    plan using progress reports, status meetings, and data
+                    analysis. They use various methods to identify any
+                    deviations from the project plan and take corrective actions
+                    to keep the project on track.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-four"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
+                >
+                  How does a project control specialist communicate project
+                  status to stakeholders?
+                  <svg
+                    class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-four"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
+                >
+                  <p class="text-gray-600">
+                    A project control specialist communicates project status to
+                    stakeholders through regular status reports, meetings, and
+                    presentations. They provide updates on project progress,
+                    budget, and timeline. They also highlight any potential
+                    risks or issues that may impact the project. In addition,
+                    they work with project team members to gather and report on
+                    relevant data, including project milestones, deliverables,
+                    and other key performance indicators. By effectively
+                    communicating project status to stakeholders, project
+                    control specialists ensure that all parties are informed and
+                    aligned on the project's progress and performance.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="hs-accordion pt-6 pb-3"
+                id="hs-basic-with-title-and-arrow-stretched-heading-five"
+              >
+                <button
+                  class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500"
+                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
+                >
+                  How do you ensure that projects are completed on time and
+                  within budget?
+                  <svg
+                    class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="hs-basic-with-title-and-arrow-stretched-collapse-five"
+                  class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
+                >
+                  <p class="text-gray-600">
+                    As a project control specialist, they ensure that projects
+                    are completed on time and within budget by monitoring
+                    project progress and performance against the project plan.
+                    They use various tools and techniques to track project
+                    costs, schedules, and resources, and identify any potential
+                    risks or issues that may impact project delivery. They also
+                    work with the project team to develop contingency plans and
+                    take corrective actions as needed to keep the project on
+                    track. Effective communication with stakeholders is also
+                    crucial to ensuring that all parties are informed and
+                    aligned on project progress and any changes that may impact
+                    the project timeline or budget. By proactively managing
+                    project risks and communicating effectively with
+                    stakeholders, project control specialists can help ensure
+                    that projects are completed on time and within budget.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+      <!-- End FAQ -->
+    </main>
+    <div
+      id="CTA-courses"
+      class="bg-gradient-to-r from-slate-300 to-gray-100 py-6 sm:py-5 lg:py-6"
+    >
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mx-auto flex max-w-xl flex-col items-center text-center">
+          <p
+            class="mb-4 font-semibold text-gr-700 md:mb-6 md:text-lg xl:text-xl"
+          >
+            Get In Touch
+          </p>
+
+          <h1
+            class="text-black-800 mb-8 text-3xl font-bold sm:text-4xl md:mb-12 md:text-5xl"
+          >
+            Start on your path to mastery now!
+          </h1>
+
+          <div
+            class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center"
+          >
+            <a
+              href="#"
+              class="inline-block rounded-lg bg-prim-200 px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-prim-400 md:text-base"
+              >Start now</a
+            >
+
+            <a
+              href="#"
+              class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+              >Take tour</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-white" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
+        <div
+          class="xl:flex xl:flex-row xl:justify-between flex justify-center flex-col content-center"
+        >
+          <div class="space-y-8 flex justify-center flex-col">
+            <a
+              href="./index.html"
+              class="text-3xl font-bold text-center tracking-tight text-primary transition duration-500 ease-in-out tracking-relaxed"
+            >
+              Optima
+            </a>
+            <p class="w-full text-center text-sm text-gray-500">
+              Helping you plan for a better future
+            </p>
+          </div>
+          <div class="grid mt-12 xl:mt-0">
+            <div
+              class="xl:grid xl:grid-cols-2 flex flex-row justify-around md:gap-16"
+            >
+              <div>
+                <h3
+                  class="text-xs font-semibold tracking-wider text-prim-300 uppercase"
+                >
+                  Sections
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Home
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Services
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Courses
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:mt-0">
+                <h3
+                  class="text-xs font-semibold tracking-wider text-prim-300 uppercase"
+                >
+                  Get in Touch
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Contact
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="mailto:optima@example.test.com"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      eMail
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="px-5 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-20"
+      >
+        <div class="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Dribbble</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:order-1 text-center">
+          <span class="mt-2 text-sm font-light w-full text-gray-500">
+            © 2023 Optima All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="preline.js"></script>
+  </body>
+</html>

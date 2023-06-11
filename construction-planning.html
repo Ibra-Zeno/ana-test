@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="images/OptimaFavicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Construction Planning</title>
+  </head>
+  <body class="w-screen overflow-x-hidden font-pop">
+    <header
+      class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-r from-slate-300 to-gray-100 bg-opacity-50 text-sm py-4"
+    >
+      <nav
+        class="max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        aria-label="Global"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="./index.html"
+            class="op-logo font-sans font-bold text-f-six md:text-f-seven lg:text-f-eight h-full items-center flex my-auto tracking-tight justify-center text-primary"
+            >Optima</a
+          >
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+              data-hs-collapse="#navbar-with-mega-menu"
+              aria-controls="navbar-with-mega-menu"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="hs-collapse-open:hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="navbar-with-mega-menu"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        >
+          <div id="email-n-social-nav" class="hidden sm:flex">
+            <div
+              id="nav-contact-links"
+              class="flex flex-row align-middle font-medium text-gr-700 justify-end pb-s-two w-full"
+            >
+              <a
+                href="mailto:test@test.com"
+                class="hover:text-ter-100 transition"
+                >optimaprojectcontrol@example.com</a
+              >
+              <div
+                id="nav-social-links"
+                class="flex flex-row pl-s-five gap-x-s-two"
+              >
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="facebook"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-ter-100 transition" alt="twitter">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="linkedin"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="instagram"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
+          >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >About Us</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >Services</a
+            >
+
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none]"
+            >
+              <button
+                id="hs-mega-menu-basic-dr"
+                type="button"
+                class="flex items-center w-full text-gr-700 hover:text-ter-100 transition font-medium"
+              >
+                Courses
+                <svg
+                  class="ml-2 w-2.5 h-2.5 text-gr-700"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-transparent sm:bg-gr-200 sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5 hidden"
+              >
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Management
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Planning
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Construction Planning
+                </a>
+              </div>
+            </div>
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <div
+        id="banner"
+        class="bg-gradient-to-br from-tertiary to-ter-700 min-h-[200px] flex items-center h-auto w-full relative"
+      >
+        <h3
+          class="w-full text-center text-secondary text-f-eight font-semibold md:text-f-nine lg:text-f-ten"
+        >
+          Construction Planning
+        </h3>
+      </div>
+      <div id="main-wrap" class="w-full">
+        <div id="main-content" class="max-w-7xl mx-auto relative">
+          <h4
+            class="font-semibold pt-s-five lg:pt-s-six leading-tight max-w-prose text-center md:text-left text-primary text-f-six md:text-f-seven lg:text-f-eight"
+          >
+            Unlock Your Potential in Construction Planning with Optima
+          </h4>
+          <div
+            class="h-2 rounded-sm mt-s-one w-12 bg-accent mx-auto md:mx-0"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <script src="preline.js"></script>
+  </body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="images/OptimaFavicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Optima</title>
+  </head>
+  <body class="w-screen overflow-x-hidden font-pop">
+    <header
+      class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-r from-slate-300 to-gray-100 bg-opacity-50 text-sm py-4"
+    >
+      <nav
+        class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        aria-label="Global"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="./index.html"
+            class="op-logo font-sans font-bold text-f-six md:text-f-seven lg:text-f-eight h-full items-center flex my-auto tracking-tight justify-center text-primary"
+            >Optima</a
+          >
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+              data-hs-collapse="#navbar-with-mega-menu"
+              aria-controls="navbar-with-mega-menu"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="hs-collapse-open:hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="navbar-with-mega-menu"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        >
+          <div id="email-n-social-nav" class="hidden sm:flex">
+            <div
+              id="nav-contact-links"
+              class="flex flex-row align-middle font-medium text-gr-700 justify-end pb-s-two w-full"
+            >
+              <a
+                href="mailto:test@test.com"
+                class="hover:text-ter-100 transition"
+                >optimaprojectcontrol@example.com</a
+              >
+              <div
+                id="nav-social-links"
+                class="flex flex-row pl-s-five gap-x-s-two"
+              >
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="facebook"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-ter-100 transition" alt="twitter">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="linkedin"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-ter-100 transition"
+                  alt="instagram"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
+          >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >About Us</a
+            >
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="./courses.html"
+              >Services</a
+            >
+
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none]"
+            >
+              <button
+                id="hs-mega-menu-basic-dr"
+                type="button"
+                class="flex items-center w-full text-gr-700 hover:text-ter-100 transition font-medium"
+              >
+                Courses
+                <svg
+                  class="ml-2 w-2.5 h-2.5 text-gr-700"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-transparent sm:bg-gr-200 sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5 hidden"
+              >
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Management
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Project Planning
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
+                  href="#"
+                >
+                  Construction Planning
+                </a>
+              </div>
+            </div>
+            <a
+              class="font-medium text-gr-700 hover:text-ter-100 transition"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <div class="relative overflow-hidden">
+      <div class="relative z-10" id="hero-index">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div class="max-w-2xl text-center mx-auto">
+            <p
+              class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-tl from-violet-200 to-rose-300 text-transparent"
+            >
+              <strong>Optima</strong>: Your Solution to Construction Planning
+            </p>
+
+            <!-- Title -->
+            <div class="mt-5 max-w-2xl">
+              <h1
+                class="block font-semibold text-gray-100 drop-shadow-lg text-4xl md:text-5xl lg:text-6xl"
+              >
+                The Intuitive Planning Solutions
+              </h1>
+            </div>
+            <!-- End Title -->
+
+            <div class="mt-5 max-w-3xl">
+              <p class="text-lg text-gr-200 drop-shadow-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+                expedita beatae inventore sapiente minus reiciendis enim debitis
+              </p>
+            </div>
+
+            <!-- Buttons -->
+            <div
+              class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center"
+            >
+              <a
+                class="inline-flex justify-center items-center gap-x-3 text-center bg-prim-200 hover:bg-prim-300 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none group transition py-3 px-4"
+                href="#"
+              >
+                <div
+                  class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+                >
+                  Hover over me
+                </div>
+              </a>
+              <a
+                class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold hover:bg-ter-600 text-white focus:outline-none group focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm"
+                href="#"
+              >
+                <div
+                  class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+                >
+                  Hover over me
+                </div>
+              </a>
+            </div>
+            <!-- End Buttons -->
+          </div>
+          <section class="text-gray-600">
+            <div class="container px-5 pt-24 pb-12 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="index-main-card">
+                    <div class="flex items-center mb-3">
+                      <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-acc-100 text-gr-800 flex-shrink-0"
+                      >
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                      </div>
+                      <h2 class="text-gray-900 text-lg title-font font-medium">
+                        Shooting Stars
+                      </h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast
+                        vegan taxidermy. Gastropub indxgo juice poutine.
+                      </p>
+                      <a class="mt-3 inline-flex items-center" href="#"
+                        ><div
+                          class="group text-sec-200 hover:text-acc-400 transition ease-in-out duration-200"
+                        >
+                          Hover over me
+                          <span
+                            aria-hidden="true"
+                            class="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200"
+                            >→</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="index-main-card">
+                    <div class="flex items-center mb-3">
+                      <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-acc-100 text-gr-800 flex-shrink-0"
+                      >
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+                          ></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </div>
+                      <h2 class="text-gray-900 text-lg title-font font-medium">
+                        The Catalyzer
+                      </h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast
+                        vegan taxidermy. Gastropub indxgo juice poutine.
+                      </p>
+                      <a class="mt-3 inline-flex items-center" href="#"
+                        ><div
+                          class="group text-sec-200 hover:text-acc-400 transition ease-in-out duration-200"
+                        >
+                          Hover over me
+                          <span
+                            aria-hidden="true"
+                            class="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200"
+                            >→</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="index-main-card">
+                    <div class="flex items-center mb-3">
+                      <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-acc-100 text-gr-800 flex-shrink-0"
+                      >
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle cx="6" cy="6" r="3"></circle>
+                          <circle cx="6" cy="18" r="3"></circle>
+                          <path
+                            d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                          ></path>
+                        </svg>
+                      </div>
+                      <h2 class="text-gray-900 text-lg title-font font-medium">
+                        Neptune
+                      </h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast
+                        vegan taxidermy. Gastropub indxgo juice poutine.
+                      </p>
+                      <a class="mt-3 inline-flex items-center" href="#"
+                        ><div
+                          class="group text-sec-200 hover:text-acc-400 transition ease-in-out duration-200"
+                        >
+                          Hover over me
+                          <span
+                            aria-hidden="true"
+                            class="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200"
+                            >→</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="seen-on-wrap">
+          <div class="seen-on">
+            <h2 class="">Connected with:</h2>
+            <div class="logos">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m16.1 3.2l7.7.9c.2 0 .3.1.4.2l5.7 7.7c.2.2.2.5 0 .7l-13.6 16c-.1.1-.3.1-.4 0l-13.6-16c-.3-.2-.3-.5-.2-.7l5.7-7.7c.1-.1.2-.2.4-.2l7.7-.9h.2zm1.6 1.6h-.2s-.1.1 0 .2l4.3 5.4c0 .1.1.1.1.2c0 .2-.1.3-.3.3H10.4c-.1 0-.1 0-.2-.1s-.1-.3-.1-.4L14.5 5v-.2h-.2l-5.9 5.9s-.1.1-.2.1s-.2-.1-.2-.2l.2-4.3c0-.1 0-.1-.1-.1s-.1 0-.1.1l-1.1 4.9c0 .2-.2.3-.3.3l-2.8.6c-.1 0-.1.1-.1.1c0 .1 0 .1.1.1h2.7c.2 0 .3.1.4.2l6.6 11.8c0 .1.1.1.2.1s.1-.1.1-.2L8.6 12.9v-.1c0-.2.1-.3.3-.4h14.4c.2.1.2.3.2.4l-5.3 11.3c0 .1 0 .2.1.2s.2 0 .2-.1L25 12.6c.1-.1.2-.2.4-.2h2.7c.1 0 .1 0 .1-.1s0-.1-.1-.1l-2.8-.6c-.2 0-.3-.2-.4-.3l-.9-5c0-.1-.1-.1-.1-.1c-.1 0-.1 0-.1.1l.2 4.3c0 .1 0 .1-.1.2s-.2.1-.3 0l-5.9-6z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m16.1 3.2l7.7.9c.2 0 .3.1.4.2l5.7 7.7c.2.2.2.5 0 .7l-13.6 16c-.1.1-.3.1-.4 0l-13.6-16c-.3-.2-.3-.5-.2-.7l5.7-7.7c.1-.1.2-.2.4-.2l7.7-.9h.2zm1.6 1.6h-.2s-.1.1 0 .2l4.3 5.4c0 .1.1.1.1.2c0 .2-.1.3-.3.3H10.4c-.1 0-.1 0-.2-.1s-.1-.3-.1-.4L14.5 5v-.2h-.2l-5.9 5.9s-.1.1-.2.1s-.2-.1-.2-.2l.2-4.3c0-.1 0-.1-.1-.1s-.1 0-.1.1l-1.1 4.9c0 .2-.2.3-.3.3l-2.8.6c-.1 0-.1.1-.1.1c0 .1 0 .1.1.1h2.7c.2 0 .3.1.4.2l6.6 11.8c0 .1.1.1.2.1s.1-.1.1-.2L8.6 12.9v-.1c0-.2.1-.3.3-.4h14.4c.2.1.2.3.2.4l-5.3 11.3c0 .1 0 .2.1.2s.2 0 .2-.1L25 12.6c.1-.1.2-.2.4-.2h2.7c.1 0 .1 0 .1-.1s0-.1-.1-.1l-2.8-.6c-.2 0-.3-.2-.4-.3l-.9-5c0-.1-.1-.1-.1-.1c-.1 0-.1 0-.1.1l.2 4.3c0 .1 0 .1-.1.2s-.2.1-.3 0l-5.9-6z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m16.1 3.2l7.7.9c.2 0 .3.1.4.2l5.7 7.7c.2.2.2.5 0 .7l-13.6 16c-.1.1-.3.1-.4 0l-13.6-16c-.3-.2-.3-.5-.2-.7l5.7-7.7c.1-.1.2-.2.4-.2l7.7-.9h.2zm1.6 1.6h-.2s-.1.1 0 .2l4.3 5.4c0 .1.1.1.1.2c0 .2-.1.3-.3.3H10.4c-.1 0-.1 0-.2-.1s-.1-.3-.1-.4L14.5 5v-.2h-.2l-5.9 5.9s-.1.1-.2.1s-.2-.1-.2-.2l.2-4.3c0-.1 0-.1-.1-.1s-.1 0-.1.1l-1.1 4.9c0 .2-.2.3-.3.3l-2.8.6c-.1 0-.1.1-.1.1c0 .1 0 .1.1.1h2.7c.2 0 .3.1.4.2l6.6 11.8c0 .1.1.1.2.1s.1-.1.1-.2L8.6 12.9v-.1c0-.2.1-.3.3-.4h14.4c.2.1.2.3.2.4l-5.3 11.3c0 .1 0 .2.1.2s.2 0 .2-.1L25 12.6c.1-.1.2-.2.4-.2h2.7c.1 0 .1 0 .1-.1s0-.1-.1-.1l-2.8-.6c-.2 0-.3-.2-.4-.3l-.9-5c0-.1-.1-.1-.1-.1c-.1 0-.1 0-.1.1l.2 4.3c0 .1 0 .1-.1.2s-.2.1-.3 0l-5.9-6z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m16.1 3.2l7.7.9c.2 0 .3.1.4.2l5.7 7.7c.2.2.2.5 0 .7l-13.6 16c-.1.1-.3.1-.4 0l-13.6-16c-.3-.2-.3-.5-.2-.7l5.7-7.7c.1-.1.2-.2.4-.2l7.7-.9h.2zm1.6 1.6h-.2s-.1.1 0 .2l4.3 5.4c0 .1.1.1.1.2c0 .2-.1.3-.3.3H10.4c-.1 0-.1 0-.2-.1s-.1-.3-.1-.4L14.5 5v-.2h-.2l-5.9 5.9s-.1.1-.2.1s-.2-.1-.2-.2l.2-4.3c0-.1 0-.1-.1-.1s-.1 0-.1.1l-1.1 4.9c0 .2-.2.3-.3.3l-2.8.6c-.1 0-.1.1-.1.1c0 .1 0 .1.1.1h2.7c.2 0 .3.1.4.2l6.6 11.8c0 .1.1.1.2.1s.1-.1.1-.2L8.6 12.9v-.1c0-.2.1-.3.3-.4h14.4c.2.1.2.3.2.4l-5.3 11.3c0 .1 0 .2.1.2s.2 0 .2-.1L25 12.6c.1-.1.2-.2.4-.2h2.7c.1 0 .1 0 .1-.1s0-.1-.1-.1l-2.8-.6c-.2 0-.3-.2-.4-.3l-.9-5c0-.1-.1-.1-.1-.1c-.1 0-.1 0-.1.1l.2 4.3c0 .1 0 .1-.1.2s-.2.1-.3 0l-5.9-6z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA -->
+    <div
+      class="bg-gradient-to-r from-slate-300 to-gray-100 py-6 sm:py-5 lg:py-6"
+    >
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mx-auto flex max-w-xl flex-col items-center text-center">
+          <p
+            class="mb-4 font-semibold text-gr-700 md:mb-6 md:text-lg xl:text-xl"
+          >
+            Connect with us
+          </p>
+
+          <h1
+            class="text-black-800 mb-8 text-3xl font-bold sm:text-4xl md:mb-12 md:text-5xl"
+          >
+            Get started on your path to mastery now!
+          </h1>
+
+          <div
+            class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center"
+          >
+            <a
+              href="#"
+              class="inline-block rounded-lg bg-prim-200 px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-prim-400 md:text-base"
+              >Start now</a
+            >
+
+            <a
+              href="#"
+              class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+              >Take tour</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-white" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
+        <div
+          class="xl:flex xl:flex-row xl:justify-between flex justify-center flex-col content-center"
+        >
+          <div class="space-y-8 flex justify-center flex-col">
+            <a
+              href="./index.html"
+              class="text-3xl font-bold text-center tracking-tight text-primary transition duration-500 ease-in-out tracking-relaxed"
+            >
+              Optima
+            </a>
+            <p class="w-full text-center text-sm text-gray-500">
+              Helping you plan for a better future
+            </p>
+          </div>
+          <div class="grid mt-12 xl:mt-0">
+            <div
+              class="xl:grid xl:grid-cols-2 flex flex-row justify-around md:gap-16"
+            >
+              <div>
+                <h3
+                  class="text-xs font-semibold tracking-wider text-prim-300 uppercase"
+                >
+                  Sections
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Home
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Services
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./courses.html"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Courses
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:mt-0">
+                <h3
+                  class="text-xs font-semibold tracking-wider text-prim-300 uppercase"
+                >
+                  Get in Touch
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      Contact
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="mailto:optima@example.test.com"
+                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                    >
+                      eMail
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="px-5 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-20"
+      >
+        <div class="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Dribbble</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:order-1 text-center">
+          <span class="mt-2 text-sm font-light w-full text-gray-500">
+            © 2023 Optima All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./preline.js"></script>
+  </body>
+</html>
