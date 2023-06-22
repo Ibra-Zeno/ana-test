@@ -6,6 +6,9 @@ module.exports = {
     "./courses.html",
     "./about.html",
     "./construction-planning.html",
+    "./contact.html",
+    "./project-management.html",
+    "./project-planning.html",
   ],
   theme: {
     extend: {
@@ -16,6 +19,7 @@ module.exports = {
         pop: ["Poppins", "sans-serif"],
         optima: ["Open Sans", "sans-serif"],
       },
+
       spacing: {
         "s-one": "4px",
         "s-two": "8px",

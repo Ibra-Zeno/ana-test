@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="images/OptimaFavicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
     <title>About Optima</title>
@@ -13,13 +19,13 @@
       class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-r from-slate-300 to-gray-100 bg-opacity-50 text-sm py-4"
     >
       <nav
-        class="max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
         <div class="flex items-center justify-between">
           <a
             href="./index.html"
-            class="op-logo font-sans font-bold text-f-six md:text-f-seven lg:text-f-eight h-full items-center flex my-auto tracking-tight justify-center text-primary"
+            class="op-logo font-optima font-bold text-f-six md:text-f-seven lg:text-f-eight h-full items-center flex my-auto tracking-tight justify-center text-primary"
             >Optima</a
           >
           <div class="sm:hidden">
@@ -146,19 +152,19 @@
           >
             <a
               class="font-medium text-gr-700 hover:text-ter-100 transition"
-              href="#"
+              href="./index.html"
               aria-current="page"
               >Home</a
             >
             <a
               class="font-medium text-gr-700 hover:text-ter-100 transition"
-              href="#"
+              href="./about.html"
               >About Us</a
             >
             <a
               class="font-medium text-gr-700 hover:text-ter-100 transition"
-              href="#"
-              >Services</a
+              href="./courses.html"
+              >What We Offer</a
             >
 
             <div
@@ -169,7 +175,7 @@
                 type="button"
                 class="flex items-center w-full text-gr-700 hover:text-ter-100 transition font-medium"
               >
-                Courses
+                View Courses
                 <svg
                   class="ml-2 w-2.5 h-2.5 text-gr-700"
                   width="16"
@@ -192,19 +198,19 @@
               >
                 <a
                   class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
-                  href="#"
+                  href="./project-management.html"
                 >
                   Project Management
                 </a>
                 <a
                   class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
-                  href="#"
+                  href="./project-planning.html"
                 >
                   Project Planning
                 </a>
                 <a
                   class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm hover:bg-gr-200 focus:ring-2 focus:ring-blue-500 text-gr-700 hover:text-ter-100 transition"
-                  href="#"
+                  href="./construction-planning.html"
                 >
                   Construction Planning
                 </a>
@@ -212,14 +218,14 @@
             </div>
             <a
               class="font-medium text-gr-700 hover:text-ter-100 transition"
-              href="#"
+              href="./contact.html"
               >Contact</a
             >
           </div>
         </div>
       </nav>
     </header>
-    <main class="bg-gradient-to-r from-fuchsia-500 to-cyan-500">
+    <main id="about-main" class="bg-gr-100">
       <div class="max-w-7xl flex flex-col relative mx-auto">
         <section
           id="about-banner"
@@ -230,7 +236,7 @@
               class="max-w-2xl text-center mx-auto h-full flex flex-col justify-center"
             >
               <p
-                class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-tl from-violet-200 to-rose-300 text-transparent"
+                class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-ter-500 via-sec-300 to-prim-300 text-transparent"
               >
                 <strong>Optima</strong>: Your Solution to Construction Planning
               </p>
@@ -238,7 +244,7 @@
               <!-- Title -->
               <div class="mt-5 max-w-2xl">
                 <h1
-                  class="block font-semibold text-gray-100 drop-shadow-lg text-4xl md:text-5xl lg:text-6xl"
+                  class="block font-semibold text-gr-800 drop-shadow-lg text-4xl md:text-5xl lg:text-6xl"
                 >
                   The Intuitive Planning Solutions
                 </h1>
@@ -246,7 +252,7 @@
               <!-- End Title -->
 
               <div class="mt-5 max-w-3xl">
-                <p class="text-lg text-gr-200 drop-shadow-lg">
+                <p class="text-f-three text-gr-700 drop-shadow-lg">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsam expedita beatae inventore sapiente minus reiciendis enim
                   debitis
@@ -258,23 +264,23 @@
                 class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center"
               >
                 <a
-                  class="inline-flex justify-center items-center gap-x-3 text-center bg-prim-200 hover:bg-prim-300 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none group transition py-3 px-4"
+                  class="inline-flex justify-center items-center gap-x-3 text-center px-4 mx-s-five sm:mx-0 bg-prim-200 hover:bg-prim-300 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none group transition py-3"
                   href="#"
                 >
                   <div
                     class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
                   >
-                    Hover over me
+                    Get Started
                   </div>
                 </a>
                 <a
-                  class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold hover:bg-ter-600 text-white focus:outline-none group focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm"
+                  class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border-opacity-75 mx-s-five sm:mx-0 border-tertiary border-2 font-semibold hover:bg-ter-600 hover:text-gr-50 text-gr-800 focus:outline-none group transition-all text-sm"
                   href="#"
                 >
                   <div
                     class="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
                   >
-                    Hover over me
+                    View Courses
                   </div>
                 </a>
               </div>
@@ -291,11 +297,11 @@
         </section>
         <!-- Cards -->
         <section
-          class="flex flex-col md:flex-row justify-center relative h-full gap-x-s-two md:pt-s-three"
+          class="flex flex-col md:flex-row justify-center relative h-full gap-x-s-two text-gr-700 md:pt-s-three"
         >
           <div class="about-head-card">
             <div class="about-head-card-header">
-              <div class="about-head-card-img">
+              <div class="about-head-card-img text-gr-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -316,7 +322,7 @@
                   </g>
                 </svg>
               </div>
-              <div class="about-head-card-title">
+              <div class="about-head-card-title font-semibold text-gr-900">
                 <h2>Effective Project Planning</h2>
               </div>
             </div>
@@ -329,7 +335,7 @@
           </div>
           <div class="about-head-card">
             <div class="about-head-card-header">
-              <div class="about-head-card-img">
+              <div class="about-head-card-img text-gr-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -342,7 +348,7 @@
                   />
                 </svg>
               </div>
-              <div class="about-head-card-title">
+              <div class="about-head-card-title font-semibold text-gr-900">
                 <h2>Cost Savings</h2>
               </div>
             </div>
@@ -356,7 +362,7 @@
           </div>
           <div class="about-head-card">
             <div class="about-head-card-header">
-              <div class="about-head-card-img">
+              <div class="about-head-card-img text-gr-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -369,7 +375,7 @@
                   />
                 </svg>
               </div>
-              <div class="about-head-card-title">
+              <div class="about-head-card-title font-semibold text-gr-900">
                 <h2>Efficient Resource Management</h2>
               </div>
             </div>
@@ -383,20 +389,20 @@
         </section>
       </div>
       <!-- About Us Heading -->
-      <div
-        class="py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-yellow-200 to-teal-400"
-      >
+      <div class="py-4 sm:py-6 lg:py-8">
         <div class="mx-auto max-w-5xl px-4 md:px-8">
           <div
-            class="rounded-lg bg-gradient-to-r from-teal-400 to-yellow-200 px-4 py-6 md:py-8 lg:py-12"
+            class="rounded-lg bg-gr-100 bg-opacity-40 border-rose-100 border-2 shadow-lg shadow-rose-200 px-4 py-6 md:py-8 lg:py-12"
           >
             <h2
-              class="mb-4 text-center text-2xl font-semibold text-gr-800 md:mb-6 md:text-3xl lg:text-4xl"
+              class="mb-4 text-center font-semibold text-gr-800 md:mb-6 text-f-five md:text-f-six lg:text-f-eight tracking-tight"
             >
               Discover Our Story
             </h2>
 
-            <p class="mx-auto max-w-prose text-center text-gr-800 md:text-xl">
+            <p
+              class="mx-auto max-w-[80ch] text-center text-gr-700 text-f-two md:text-f-three tracking-wide"
+            >
               At Optima, we provide expert project control services to help you
               achieve your goals efficiently, on time, and within budget. Our
               experienced team specializes in planning, scheduling, cost
@@ -405,11 +411,13 @@
               project. Let us take your project to the next level.
             </p>
             <p
-              class="my-s-four text-center font-semibold text-indigo-500 md:my-s-five lg:text-lg"
+              class="text-center font-semibold text-prim-500 text-opacity-80 md:mt-s-five md:mb-s-two lg:text-lg"
             >
               Our Approach
             </p>
-            <p class="mx-auto max-w-prose text-center text-gr-800 md:text-xl">
+            <p
+              class="mx-auto max-w-[80ch] text-center text-gr-800 text-f-two md:text-f-three tracking-wide"
+            >
               At Optima, we believe that the key to success lies in a
               personalized approach. We take the time to understand our clients'
               unique needs, goals, and challenges, and tailor our project
@@ -424,10 +432,10 @@
         </div>
       </div>
       <!-- Services offered -->
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="py-6 sm:py-8 lg:py-12">
         <div class="mx-auto max-w-7xl px-4 md:px-8">
           <!-- text - start -->
-          <div class="mb-10 md:mb-16">
+          <div class="mb-8 md:mb-10">
             <h2
               class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
             >
@@ -444,10 +452,12 @@
           </div>
           <!-- text - end -->
 
-          <div class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
+          <div
+            class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3 w-full bg-gr-100 bg-opacity-40 border-primary border-opacity-10 shadow-lg border px-4 py-6 rounded-md"
+          >
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -465,10 +475,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
                   Forensic Planning
                 </h3>
-                <p class="text-gray-500">
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Forensic planning ensures project success. Experts use tools
                   for issue identification, schedule and budget monitoring, and
                   data-driven decision-making, preventing delays and overruns.
@@ -478,8 +488,8 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -497,10 +507,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
                   Delay Analysis
                 </h3>
-                <p class="text-gray-500">
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Construction projects rely on delay analysis. Experts use
                   forensic schedule analysis and modeling to identify and
                   mitigate delays, ensuring projects stay on track, avoid
@@ -511,8 +521,8 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -530,10 +540,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
                   Tender Planning
                 </h3>
-                <p class="text-gray-500">
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Effective tender planning is crucial for winning bids. Experts
                   analyze bid documents, identify risks, and create competitive
                   packages, meeting budget and scheduling requirements for
@@ -544,8 +554,8 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -563,8 +573,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">Reporting</h3>
-                <p class="text-gray-500">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
+                  Reporting
+                </h3>
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Experts deliver insightful reports, utilizing data
                   visualization and metrics for optimized project outcomes.
                 </p>
@@ -573,8 +585,8 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -592,8 +604,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">Dashboard</h3>
-                <p class="text-gray-500">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
+                  Dashboard
+                </h3>
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Experts develop custom dashboards, enabling real-time project
                   visibility and informed decision-making for maximum success.
                 </p>
@@ -602,8 +616,8 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex divide-x rounded-lg border bg-gray-50">
-              <div class="flex items-center p-2 text-indigo-500 md:p-4">
+            <div class="flex divide-x rounded-lg border bg-white shadow-sm">
+              <div class="flex items-center p-2 text-prim-300 md:p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 md:h-8 md:w-8"
@@ -621,10 +635,10 @@
               </div>
 
               <div class="p-4 md:p-6">
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                <h3 class="mb-2 text-lg font-semibold text-gr-800 md:text-xl">
                   Value Engineering
                 </h3>
-                <p class="text-gray-500">
+                <p class="text-gray-500 text-f-two md:text-f-three">
                   Identify cost-saving opportunities, enhance efficiency, and
                   improve performance while meeting objectives and maintaining
                   quality standards.
@@ -636,7 +650,7 @@
         </div>
       </div>
       <!-- Testimonials -->
-      <div class="bg-white py-s-four sm:py-s-six lg:py-s-eight">
+      <div class="py-s-four sm:py-s-six lg:py-s-eight">
         <div class="mx-auto max-w-screen-xl px-4 md:px-8">
           <h2
             class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl"
@@ -672,7 +686,7 @@
 
                 <div>
                   <div
-                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                    class="text-center text-sm font-bold text-prim-300 sm:text-left md:text-base"
                   >
                     John McCulling
                   </div>
@@ -711,7 +725,7 @@
 
                 <div>
                   <div
-                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                    class="text-center text-sm font-bold text-prim-300 sm:text-left md:text-base"
                   >
                     Kate Berg
                   </div>
@@ -750,7 +764,7 @@
 
                 <div>
                   <div
-                    class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base"
+                    class="text-center text-sm font-bold text-prim-300 sm:text-left md:text-base"
                   >
                     Greg Jackson
                   </div>
@@ -1159,7 +1173,7 @@
                 <ul role="list" class="mt-4 space-y-4">
                   <li>
                     <a
-                      href="#"
+                      href="./index.html"
                       class="text-sm font-normal text-gray-500 hover:text-gray-900"
                     >
                       Home
@@ -1168,25 +1182,15 @@
 
                   <li>
                     <a
-                      href="#"
+                      href="./about.html"
                       class="text-sm font-normal text-gray-500 hover:text-gray-900"
                     >
                       About Us
                     </a>
                   </li>
-
                   <li>
                     <a
-                      href="#"
-                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
-                    >
-                      Services
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
+                      href="./courses.html"
                       class="text-sm font-normal text-gray-500 hover:text-gray-900"
                     >
                       Courses
@@ -1201,21 +1205,12 @@
                   Get in Touch
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
-                  <li>
+                  <li class="flex overflow-visible">
                     <a
-                      href="#"
-                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
+                      href="./contact.html"
+                      class="text-f-two font-medium w-full text-center py-s-two text-gr-50 bg-secondary rounded-md tracking-wider border-sec-50 border-2 hover:bg-sec-200 hover:text-white transition duration-200 ease-in-out"
                     >
                       Contact
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="mailto:optima@example.test.com"
-                      class="text-sm font-normal text-gray-500 hover:text-gray-900"
-                    >
-                      eMail
                     </a>
                   </li>
                 </ul>

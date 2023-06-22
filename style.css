@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i style.css -o ./dist/output.css --watch */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@layer utilities {
+  .index-main-card {
+    @apply flex rounded-lg h-full border border-gr-400 bg-gray-100 p-8 flex-col;
+  }
+  .seen-on-wrap {
+    @apply bg-gr-100 min-h-[100px] relative w-full backdrop-blur-sm bg-opacity-10 py-s-three px-s-five flex flex-row justify-around items-center;
+  }
+  .seen-on {
+    @apply flex-wrap h-full w-full max-w-7xl relative gap-y-s-four flex flex-row justify-around items-center;
+  }
+  .seen-on h2 {
+    @apply text-f-four text-gr-900 drop-shadow-md font-medium;
+  }
+  .logos {
+    @apply flex flex-row max-w-[70%] gap-x-s-three gap-y-s-three w-full flex-wrap justify-around items-center;
+  }
+  .about-head-card {
+    @apply flex flex-col justify-start items-center mt-s-four w-[90%] mx-auto md:mx-0 md:w-[30%] relative h-full md:min-h-[180px] px-s-three py-s-two rounded-md hover:-translate-y-2 hover:shadow-md transition-all duration-300 ease-in-out;
+  }
+  .about-head-card-header {
+    @apply inline-flex flex-row justify-center md:justify-start items-center w-full h-full mb-s-four;
+  }
+  .about-head-card-img svg {
+    @apply w-[50px] h-[50px] object-cover;
+  }
+  .about-head-card-title {
+    @apply ml-s-four;
+  }
+  .about-head-card-inner {
+    @apply flex justify-start items-start;
+  }
+  .about-head-card-inner p {
+    @apply text-f-two md:text-f-three tracking-wide text-center md:text-left font-medium mb-s-four max-w-prose w-full;
+  }
+}
+
+#hero-index {
+  background-image: url("../images/header-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#courses-main {
+  background-image: url("../images/blobs.svg");
+  background-size: cover;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+}
+#main-wrap-courses {
+  background-image: url("../images/better-bg.svg");
+  background-size: cover;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+}
