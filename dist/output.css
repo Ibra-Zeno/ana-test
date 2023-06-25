@@ -1439,6 +1439,12 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.from-rose-300 {
+  --tw-gradient-from: #fda4af var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(253 164 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-slate-300 {
   --tw-gradient-from: #cbd5e1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(203 213 225 / 0) var(--tw-gradient-to-position);
@@ -1482,6 +1488,10 @@ video {
 
 .to-ter-700 {
   --tw-gradient-to: hsl(233, 96%, 20%) var(--tw-gradient-to-position);
+}
+
+.to-violet-200 {
+  --tw-gradient-to: #ddd6fe var(--tw-gradient-to-position);
 }
 
 .bg-clip-text {
@@ -1635,6 +1645,21 @@ video {
   padding-bottom: 8px;
 }
 
+.px-s-three {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1695,6 +1720,10 @@ video {
   padding-top: 12px;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1707,16 +1736,12 @@ video {
   vertical-align: middle;
 }
 
-.font-pop {
-  font-family: Poppins, sans-serif;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-optima {
   font-family: Open Sans, sans-serif;
+}
+
+.font-pop {
+  font-family: Poppins, sans-serif;
 }
 
 .text-2xl {
@@ -1780,6 +1805,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1967,6 +1997,21 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-sec-300 {
+  --tw-text-opacity: 1;
+  color: hsl(342 79% 59% / var(--tw-text-opacity));
+}
+
+.text-ter-200 {
+  --tw-text-opacity: 1;
+  color: hsl(213 99% 58% / var(--tw-text-opacity));
+}
+
+.text-prim-100 {
+  --tw-text-opacity: 1;
+  color: hsl(320 80% 71% / var(--tw-text-opacity));
 }
 
 .text-opacity-80 {
@@ -2759,6 +2804,15 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:font-normal {
+    font-weight: 400;
+  }
+
   .sm\:shadow-md {
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -2856,6 +2910,18 @@ video {
     height: 2rem;
   }
 
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:min-h-\[600px\] {
+    min-height: 600px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2874,6 +2940,14 @@ video {
 
   .md\:w-8 {
     width: 2rem;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -2960,6 +3034,14 @@ video {
 
   .md\:pt-s-three {
     padding-top: 12px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .md\:text-left {
@@ -3067,6 +3149,10 @@ video {
 
   .lg\:max-h-full {
     max-height: 100%;
+  }
+
+  .lg\:min-h-full {
+    min-height: 100%;
   }
 
   .lg\:w-1\/3 {
@@ -3232,6 +3318,11 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
